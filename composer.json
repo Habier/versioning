@@ -1,0 +1,48 @@
+{
+  "name": "habier/versioning",
+  "description": "Helpers to add version number to assets url",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Javier Garcia",
+      "email": "Habier@users.noreply.github.com",
+      "homepage": "https://github.com/habier"
+    }
+  ],
+  "minimum-stability": "dev",
+  "homepage": "https://github.com/habier/versioning",
+  "keywords": [
+    "Laravel",
+    "Asset",
+    "Version"
+  ],
+  "require": {
+    "illuminate/support": "~5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~7.0",
+    "mockery/mockery": "^1.1",
+    "orchestra/testbench": "~3.0",
+    "sempro/phpunit-pretty-print": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Habier\\Versioning\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Habier\\Versioning\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Habier\\Versioning\\AssetVersioningServiceProvider"
+      ]
+    }
+  }
+}
