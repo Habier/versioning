@@ -4,7 +4,7 @@ If you are using webpack or something similar, this is not needed.
 
 ## Installation
 ```shell
-composer require composer require habier/versioning
+composer require habier/versioning
 php artisan vendor:publish --provider="Habier\Versioning\AssetVersioningServiceProvider"
 ```
 

@@ -10,8 +10,8 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Package">
-            <directory suffix=".php">./tests/</directory>
+        <testsuite name="habier/versioning test suite">
+            <directory>tests</directory>
         </testsuite>
     </testsuites>
     <filter>
