@@ -12,9 +12,9 @@
   "minimum-stability": "dev",
   "homepage": "https://github.com/habier/versioning",
   "keywords": [
-    "Laravel",
-    "Asset",
-    "Version"
+    "laravel",
+    "asset",
+    "version"
   ],
   "require": {
     "illuminate/support": "~5"
