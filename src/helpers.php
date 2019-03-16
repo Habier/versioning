@@ -5,7 +5,7 @@
  * @param null $version
  * @return \Illuminate\Contracts\Routing\UrlGenerator|string
  */
-function urlVersion($path, $version = null)
+function url_version($path, $version = null)
 {
     return \Habier\Versioning\AssetVersioning::url($path, $version);
 }
@@ -15,7 +15,7 @@ function urlVersion($path, $version = null)
  * @param null $version
  * @return string
  */
-function assetVersion($path, $version = null)
+function asset_version($path, $version = null)
 {
     return \Habier\Versioning\AssetVersioning::asset($path, $version);
 }
@@ -25,7 +25,7 @@ function assetVersion($path, $version = null)
  * @param array $parameters
  * @return string
  */
-function routeVersion($path, $parameters = [])
+function route_version($path, $parameters = [])
 {
     return \Habier\Versioning\AssetVersioning::route($path, $parameters);
 }
