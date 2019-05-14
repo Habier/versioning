@@ -8,16 +8,17 @@ composer require habier/versioning
 php artisan vendor:publish --provider="Habier\Versioning\AssetVersioningServiceProvider"
 ```
 
-After this, you will find a new config file called **version.php** in your config folder.
+After this, you will find a new config file called **version.php** in your config folder.  
+This config file holds your global app version.
 
 ## Usage
 ```blade
-<link href="{{ urlVersion('css/app.css') }}" rel="stylesheet">
-<link href="{{ assetVersion('css/app.css') }}" rel="stylesheet">
+<link href="{{ url_version('css/app.css') }}" rel="stylesheet">
+<link href="{{ asset_version('css/app.css') }}" rel="stylesheet">
 ```
 
 You can add specific version number too.
 ```blade
-<link href="{{ urlVersion('css/app.css', 42) }}" rel="stylesheet">
-<link href="{{ assetVersion('css/app.css', 42) }}" rel="stylesheet">
+<link href="{{ url_version('css/app.css', 42) }}" rel="stylesheet">
+<link href="{{ asset_version('css/app.css', 42) }}" rel="stylesheet">
 ```
